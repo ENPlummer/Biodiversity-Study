@@ -16,14 +16,8 @@
       <div class="col-md-12">
         <h1>Belly Button Biodiversity</h1>
         <div id="plot">
-          <script src="plots.js"></script>
-          <select id="selDataset" onchange="optionChanged(this.value)">
-            <option value="/names">Names</option>
-            <option value="/otu">OTU</option>
-            <option value="/metadata/<sample>">Metadata/Sample</option>
-            <option value="/wfreq/<sample>">Wash Frequency</option>  
-          </select>
-           <div id=sampleNames></div> 
+        <script src="plots.js"></script>
+        <select id="seldataset" onchange="optionChanged(this.value)"></select>
         </div>	
       </div>	
     </div>	
