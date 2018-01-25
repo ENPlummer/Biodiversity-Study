@@ -37,14 +37,15 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-	return (f"Welcome to the Belly Button Biodiversity API!</br>"
-		    f"Available Routes:</br>"
-		    f"/api/v1.0/names</br>"
-		    f"/api/v1.0/otu</br>"
-		    f"/api/v1.0/metadata/<sample></br>"
-		    f"/api/v1.0/wfreq/<sample></br>"
-		    f"/api/1.0/sample/<sample></br>"
-		)
+	return(
+		f"Welcome to the Belly Button Biodiversity API</br>"
+		f"Available Routes:</br"
+		f"/api/v1.0/names</br>"
+		f"/api/v1.0/otu</br>"
+		f"/api/v1.0/metadata/<sample></br>"
+		f"/api/v1.0/wfreq/<sample></br"
+		f"/api/v1.0/sample/<sample></br>")
+
 
 @app.route("/names")
 #List of sample names.
